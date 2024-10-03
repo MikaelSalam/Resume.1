@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micheal Salam's Resume</title>
+    <style>
+        body {
+            background-image: url('background.avif');
+            color:#fff ;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: yellow;
+            text-shadow: 3px 3px purple;
+            font-size: 50px;
+            animation: colorChange 10s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: black; }
+            100% { color: yellow; }
+        }
+        h2 {
+            color: yellow;
+            margin-top: 30px;
+        }
+        p {
+            color: yellow;
+            font-size: 25px;
+            margin: 10px 0;
+        }
+        a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 2px solid white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+        th {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Micheal Salam's Resume</h1>
+    <p>My name is Micheal Salam and I am 16 years old</p>
+	<p>currently a student at the University Of Belize and I am doing associates in IT(Information Technology)</p>
+    <p>I am going to the Univeristy Of Belize in Belmopan.</p>
+    <p>I am currently taking 5 courses which are Programming 1,Critical Thinking,Fundamentals Of Computing(FOC),Developmental Math,Pyschology.</p>
+	<p>This is my first year at UB.</p>
+    <p><a href="https://www.ubelearn.com/" id="ub-link">Visit UB.com!</a></p>
+
+    <h2>My Schedule</h2>
+	<button onclick="document.getElementById('myImage').src='thumbsup.JPG'">:)</button>
+
+    <img id="myImage" src="face.JPEG File (.jpeg)" style="width:200px">
+
+      <button onclick="document.getElementById('myImage').src='face.JPEG'">:(</button>
+
+    <table>
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+        </tr>
+        <tr>
+            <td>Critical Thinking: 9:30 a.m. - 10:45 a.m.</td>
+            <td>Fundamentals of Computing: 9:30 a.m. - 10:45 a.m.</td>
+            <td>Critical Thinking: 9:30 a.m. - 10:45 a.m.</td>
+            <td>Fundamentals of Computing: 9:30 a.m. - 10:45 a.m.</td>
+        </tr>
+        <tr>
+            <td>Programming 1: 12:30 p.m. - 1:45 p.m.</td>
+            <td>Psychology: 2:00 p.m. - 3:15 p.m.</td>
+            <td>Programming 1: 12:30 p.m. - 1:45 p.m.</td>
+            <td>Psychology: 2:00 p.m. - 3:15 p.m.</td>
+        </tr>
+        <tr>
+            <td>Developmental Math: 5:00 p.m. - 6:30 p.m.</td>
+            <td colspan="3">Free Period</td>
+        </tr>
+    </table>
+	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click To Add Numbers.</title>
+</head>
+<body>
+    <button onclick="addNumbers()">Click To Add Numbers.</button>
+    <p id="result"></p>
+
+    <script>
+        function addNumbers() {
+            let num1 = parseFloat(prompt("Enter First Number:"));
+            let num2 = parseFloat(prompt("Enter Second Number:"));
+            let sum = num1 + num2;
+            document.getElementById("result").innerText = "Sum: " + sum;
+        }
+    </script>
+	
+    <script src="script.js"></script>
+</body>
+</html>
